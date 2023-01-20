@@ -1,9 +1,9 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/marchandmd/night_writer_2208/pull/73 -->
+<!-- Improved compatibility of back to top link: See: https://github.com/marchandmd/futbol/pull/73 -->
 
 <a name="readme-top"></a>
 
 <!--
-*** Thanks for checking out the night_writer_2208. If you have a suggestion
+*** Thanks for checking out the futbol. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
@@ -30,19 +30,19 @@
 <br />
 <div align="center">
 
-  <h1 align="center">night_writer_2208</h1>
+  <h1 align="center">futbol</h1>
 
   <p align="center">
     Text translator from and to standard braille characters
     <br />
-    <a href="https://github.com/marchandmd/night_writer_2208"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/marchandmd/futbol"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/marchandmd/night_writer_2208">View Demo</a>
+    <a href="https://github.com/marchandmd/futbol">View Demo</a>
     ·
-    <a href="https://github.com/marchandmd/night_writer_2208/issues">Report Bug</a>
+    <a href="https://github.com/marchandmd/futbol/issues">Report Bug</a>
     ·
-    <a href="https://github.com/marchandmd/night_writer_2208/issues">Request Feature</a>
+    <a href="https://github.com/marchandmd/futbol/issues">Request Feature</a>
   </p>
 </div>
 
@@ -108,7 +108,7 @@ n/a
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/marchandmd/night_writer_2208.git
+    git clone https://github.com/marchandmd/futbol.git
     ```
 2. Install packages
     ```sh
@@ -141,7 +141,7 @@ ruby reader_runner.rb
 - [ ] bundle
 - [ ] improve test coverage
 
-See the [open issues](https://github.com/marchandmd/night_writer_2208/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/marchandmd/futbol/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +176,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Michael Marchand - MichaelDavidMarchand@gmail.com
 
-Project Link: [https://github.com/MarchandMD/night_writer_2208](https://github.com/marchandmd/night_writer_2208)
+Project Link: [https://github.com/MarchandMD/futbol](https://github.com/marchandmd/futbol)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,16 +197,16 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/marchandmd/night_writer_2208.svg?style=for-the-badge
-[contributors-url]: https://github.com/marchandmd/night_writer_2208/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/marchandmd/night_writer_2208.svg?style=for-the-badge
-[forks-url]: https://github.com/marchandmd/night_writer_2208/network/members
-[stars-shield]: https://img.shields.io/github/stars/marchandmd/night_writer_2208.svg?style=for-the-badge
-[stars-url]: https://github.com/marchandmd/night_writer_2208/stargazers
-[issues-shield]: https://img.shields.io/github/issues/marchandmd/night_writer_2208.svg?style=for-the-badge
-[issues-url]: https://github.com/marchandmd/night_writer_2208/issues
-[license-shield]: https://img.shields.io/github/license/marchandmd/night_writer_2208.svg?style=for-the-badge
-[license-url]: https://github.com/marchandmd/night_writer_2208/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/marchandmd/futbol.svg?style=for-the-badge
+[contributors-url]: https://github.com/marchandmd/futbol/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/marchandmd/futbol.svg?style=for-the-badge
+[forks-url]: https://github.com/marchandmd/futbol/network/members
+[stars-shield]: https://img.shields.io/github/stars/marchandmd/futbol.svg?style=for-the-badge
+[stars-url]: https://github.com/marchandmd/futbol/stargazers
+[issues-shield]: https://img.shields.io/github/issues/marchandmd/futbol.svg?style=for-the-badge
+[issues-url]: https://github.com/marchandmd/futbol/issues
+[license-shield]: https://img.shields.io/github/license/marchandmd/futbol.svg?style=for-the-badge
+[license-url]: https://github.com/marchandmd/futbol/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/marchandmd1
 [product-screenshot]: images/screenshot.png

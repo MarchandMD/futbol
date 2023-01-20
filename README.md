@@ -76,15 +76,20 @@
 
 ## About The Project
 
-This project converts text from Braille into standard English, and vice versa
+We will be using data from a fictional sports league to analyze team performance for specific seasons and across seasons. We want to see who the best and worst performers are, as well as be able to pull statistics for individual teams. To that end we will create a StatTracker class that will provide us with the information we need.
 
-What did I learn building this:
+The first half of the project will focus on building the base statistics functionality through our StatTracker. As you build out this class, you will quickly realize that there is waaaay too much going on in one class; so, for the second half of the project we will switch our focus to reorganizing our code to practice good SRP!
 
-- Encapsulation, Abstraction
-- Principles of OOP
-- Object instantiation
-- Reading to and from files
-- .gitignore
+Concepts learned during this project:
+
+- Single Responsibility Principle
+- Writing organize, readable code
+- Using TDD as a design strategy
+- Designing an OO solution to a problem
+- Practiced algorithmic thinking
+- Working in a group
+- GH project and GH workflow
+- Importing data from CSV
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -102,7 +107,7 @@ What did I learn building this:
 
 ### Prerequisites
 
-n/a
+- ruby version 2.7.4
 
 ### Installation
 
@@ -121,10 +126,10 @@ n/a
 
 ## Usage
 
-It's pretty straight-forward to use this. Once it's on your machine and you `cd` into the repo, in the commandline run
+The true value from this project comes from the test suite; Review the current passing state of the test suite by navigating into the project directory after cloning it and running:
 
 ```bs
-ruby reader_runner.rb
+rspec
 ```
 
 
@@ -135,11 +140,7 @@ ruby reader_runner.rb
 ## Roadmap
 
 - README
-- [ ] images of project
-- [ ] complete extensions
-- [ ] add rspec gem
-- [ ] bundle
-- [ ] improve test coverage
+- [ ] Front-end interface? Command line performance?
 
 See the [open issues](https://github.com/marchandmd/futbol/issues) for a full list of proposed features (and known issues).
 
@@ -184,13 +185,14 @@ Project Link: [https://github.com/MarchandMD/futbol](https://github.com/marchand
 
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+Some great tools and/or people who helped to make this project what it is!
 
 -   [Choose an Open Source License](https://choosealicense.com)
 -   [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 -   [Img Shields](https://shields.io)
 -   [GitHub Pages](https://pages.github.com)
 -   [Rubocop](https://rubocop.org/)
+-   [The other contributors!][contributors-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -214,5 +216,5 @@ Use this space to list resources you find helpful and would like to give credit 
 [bootstrap-url]: https://getbootstrap.com
 [ruby.com]: https://img.shields.io/badge/ruby-v2.7.4-red
 [ruby-url]: https://ruby-doc.org/core-2.7.2/
-[rspec.com]: https://img.shields.io/badge/rspec-v3.10-success
+[rspec.com]: https://img.shields.io/badge/rspec-v3.12-success
 [rspec-url]: https://rspec.info/documentation/

@@ -26,17 +26,17 @@ module SeasonStats
   def most_accurate_team(season)
     season_games = game_data_for_a_season(season)
 
-    team_id = shots_and_goals_by_team(season_games).max_by do |_team, stats| 
+    team_id = shots_and_goals_by_team(season_games).max_by do |_team, stats|
       stats[:goals].to_f / stats[:shots]
     end
-    
+
     team_finder(team_id[0])
   end
 
   def least_accurate_team(season)
     season_games = game_data_for_a_season(season)
 
-    team_id = shots_and_goals_by_team(season_games).min_by do |_team, stats| 
+    team_id = shots_and_goals_by_team(season_games).min_by do |_team, stats|
       stats[:goals].to_f / stats[:shots]
     end
 

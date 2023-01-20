@@ -1,15 +1,14 @@
 module GameStats
-  
   def highest_total_score
     sum_goals_array.max
   end
-  
+
   def lowest_total_score
     sum_goals_array.min
   end
-  
+
   def sum_goals_array
-     @games.map do |game|
+    @games.map do |game|
       game[:home_goals].to_i + game[:away_goals].to_i
     end
   end
@@ -19,7 +18,6 @@ module GameStats
       game[:home_goals] > game[:away_goals]
     end
     (home_wins.to_f / @games.length).round(2)
-
   end
 
   def percentage_visitor_wins
@@ -31,7 +29,7 @@ module GameStats
 
   def percentage_ties
     results = return_column(@game_teams, :result)
-    tie_results = results.find_all { |result| result == "TIE"}
+    tie_results = results.find_all { |result| result == "TIE" }
     (tie_results.length.to_f / results.length.to_f).round(2)
   end
 
@@ -42,7 +40,7 @@ module GameStats
     end
     all_results
   end
-  
+
   def count_of_games_by_season
     count = Hash.new(0)
     @games.each do |game|
@@ -59,12 +57,12 @@ module GameStats
     (sum_goals_array / @games.length).round(2)
   end
 
-  def average_goals_by_season 
-    seasons = Hash.new { |h,k| h[k] = [] }
+  def average_goals_by_season
+    seasons = Hash.new { |h, k| h[k] = [] }
     @games.each do |csv_row|
-      seasons[csv_row[:season]] << csv_row[:away_goals].to_i + csv_row[:home_goals].to_i
+      seasons[csv_row[:season]] << (csv_row[:away_goals].to_i + csv_row[:home_goals].to_i)
     end
-    seasons.each do |k,v|
+    seasons.each do |k, _v|
       seasons[k] = (seasons[k].sum / seasons[k].count.to_f).round(2)
     end
     seasons

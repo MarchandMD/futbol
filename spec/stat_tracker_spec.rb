@@ -69,19 +69,17 @@ RSpec.describe StatTracker do
 
   describe 'count_of_games_by_season' do
     it 'counts games by season' do
-      expect(@stat_tracker.count_of_games_by_season).to eq({"20122013"=>9, "20132014" => 1})
+      expect(@stat_tracker.count_of_games_by_season).to eq({ "20122013" => 9, "20132014" => 1 })
     end
   end
 
   describe '#average_goals_by_season' do
     it 'tabulates average goals by season' do
-
-      expect(@stat_tracker.average_goals_by_season).to eq({"20122013"=>3.78, "20132014"=>5.0})
-
+      expect(@stat_tracker.average_goals_by_season).to eq({ "20122013" => 3.78, "20132014" => 5.0 })
     end
   end
 
-  describe '#best_offense'  do
+  describe '#best_offense' do
     it 'can return Name of the team with the highest avg # of goals/game scored across all seasons' do
       # require 'pry'; binding.pry
       expect(@stat_tracker.best_offense).to be_a String
@@ -106,19 +104,16 @@ RSpec.describe StatTracker do
     end
   end
 
-
-
   describe '#percentage_home_wins' do
     it 'finds the percetage of home wins' do
       # cool code goes here
     end
   end
 
-
   describe '#average_win_percentage' do
     it 'calculates average win percentage of a single team' do
-      expect(@stat_tracker.average_win_percentage('3')).to eq (0)
-      expect(@stat_tracker.average_win_percentage('16')).to eq (0.43)
+      expect(@stat_tracker.average_win_percentage('3')).to eq(0)
+      expect(@stat_tracker.average_win_percentage('16')).to eq(0.43)
     end
   end
 
@@ -183,7 +178,7 @@ RSpec.describe StatTracker do
 
   describe '#team_info' do
     it 'returns a hash with the team info' do
-      expect(@stat_tracker.team_info('1')).to eq({'team_id' => '1', 'franchise_id' => '23', 'team_name' => 'Atlanta United', 'abbreviation' => 'ATL', 'link' => '/api/v1/teams/1'})
+      expect(@stat_tracker.team_info('1')).to eq({ 'team_id' => '1', 'franchise_id' => '23', 'team_name' => 'Atlanta United', 'abbreviation' => 'ATL', 'link' => '/api/v1/teams/1' })
     end
   end
 
@@ -217,13 +212,13 @@ RSpec.describe StatTracker do
     end
   end
 
-  describe '#return_column' do 
-    it 'returns column of information from data set' do 
+  describe '#return_column' do
+    it 'returns column of information from data set' do
       data_set = [
-        {team: 1, goals: 2, wins: 4},
-        {team: 2, goals: 2, wins: 4},
-        {team: 3, goals: 2, wins: 4},
-        {team: 4, goals: 2, wins: 4}
+        { team: 1, goals: 2, wins: 4 },
+        { team: 2, goals: 2, wins: 4 },
+        { team: 3, goals: 2, wins: 4 },
+        { team: 4, goals: 2, wins: 4 }
       ]
 
       expect(@stat_tracker.return_column(data_set, :goals)).to eq([2, 2, 2, 2])

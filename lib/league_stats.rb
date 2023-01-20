@@ -9,10 +9,10 @@ module LeagueStats
     game_teams_hash_elements.each do |x|
       team_id_goals_hash[x[:team_id]] << x[:goals].to_i
     end
-    team_id_goals_hash.map do |k,v|
+    team_id_goals_hash.map do |k, v|
       team_id_goals_hash[k] = (v.sum / v.length.to_f).round(2)
     end
-    @teams.find { |x| x.fetch(:team_id) == team_id_goals_hash.max_by { |k,v| v }.first }[:teamname]
+    @teams.find { |x| x.fetch(:team_id) == team_id_goals_hash.max_by { |_k, v| v }.first }[:teamname]
   end
 
   def worst_offense # mm
@@ -21,10 +21,10 @@ module LeagueStats
     game_teams_hash_elements.each do |x|
       team_id_goals_hash[x[:team_id]] << x[:goals].to_i
     end
-    team_id_goals_hash.map do |k,v|
+    team_id_goals_hash.map do |k, v|
       team_id_goals_hash[k] = (v.sum / v.length.to_f).round(2)
     end
-    @teams.find { |x| x.fetch(:team_id) == team_id_goals_hash.min_by { |k,v| v }.first }[:teamname]
+    @teams.find { |x| x.fetch(:team_id) == team_id_goals_hash.min_by { |_k, v| v }.first }[:teamname]
   end
 
   def home_team_score
@@ -34,7 +34,7 @@ module LeagueStats
       home_team_score[game[:home_team_id]] += game[:home_goals].to_i
       home_team_count[game[:home_team_id]] += 1
     end
-    home_score_average = home_team_score.map { |id, score| {id => (score.to_f / home_team_count[id].to_f).round(2)} }
+    home_score_average = home_team_score.map { |id, score| { id => (score.to_f / home_team_count[id].to_f).round(2) } }
     home_score_hash = {}
     home_score_average.map { |average| home_score_hash[average.keys[0]] = average.values[0] }
     home_score_hash
@@ -47,7 +47,7 @@ module LeagueStats
       away_team_score[game[:away_team_id]] += game[:away_goals].to_i
       away_team_count[game[:away_team_id]] += 1
     end
-    away_score_average = away_team_score.map { |id, score| {id => (score.to_f / away_team_count[id].to_f).round(2)} }
+    away_score_average = away_team_score.map { |id, score| { id => (score.to_f / away_team_count[id].to_f).round(2) } }
     away_score_hash = {}
     away_score_average.map { |average| away_score_hash[average.keys[0]] = average.values[0] }
     away_score_hash

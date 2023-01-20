@@ -33,9 +33,9 @@
   <h1 align="center">futbol</h1>
 
   <p align="center">
-    Text translator from and to standard braille characters
+    System built to analyze fictional statistics
     <br />
-    <a href="https://github.com/marchandmd/futbol"><strong>Explore the docs »</strong></a>
+    <a href="https://backend.turing.edu/module1/projects/futbol/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/marchandmd/futbol">View Demo</a>
